@@ -1,11 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/variables.css">
+    <title>Evacuator</title>
 </head>
+
 <body>
-    
+    <div class="evacuator">
+        <header class="evacuator__header">
+            <a class="evacuator__logo" href="#">
+                <img src="./img/svg/logo.svg" alt="логотип">
+            </a>
+            <div class="evacuator__wrap-burger">
+
+                <button class="evacuator__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="evacuator__nav">
+                    <ul class="evacuator__nav-list">
+                        <li class="evacuator__nav-item">
+                            <a class="evacuator__nav-link" href="#">о проекте</a>
+                        </li>
+                        <li class="evacuator__nav-item">
+                            <a class="evacuator__nav-link" href="#">контакты</a>
+                        </li>
+                        <li class="evacuator__nav-item">
+                            <button class="evacuator__btn-add" type="button">добавить объявление</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+        <main class="evacuator__hero">
+            <div class="evacuator__section-tel">
+                <div class="evacuator__container">
+                    <div class="evacuator__block-desc">
+                        <h1 class="evacuator__desc">Телефоны для вызова эвакуатора в <a href="#">Москве</a></h1>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="evacuator__container">
+            <div class="evacuator__main-content">
+                <div class="evacuator__wrap-sorting">
+                    <button type="button" class="evacuator__btn-sorting">
+                        <span>Сортировка</span>
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9.5L12 18.5L21 9.5" stroke="#777777" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+                <ul class="evacuator__wrap-cards">
+                    <li class="evacuator__card">
+                        <h2 class="evacuator__card-title">Эвакуатор</h2>
+                        <div class="evacuator__inner-card">
+                            <div class="evacuator__card-photo">
+                                <img src="./img/img1.jpg" alt="'эвакуатор">
+                            </div>
+                            <ul class="evacuator__characteristics">
+                                <li class="evacuator__item">
+                                    <p class="evacuator__car-name">Легковой автомобиль</p>
+                                    <p class="evacuator__price">5 000 руб</p>
+                                </li>
+                                <li class="evacuator__item">
+                                    <p class="evacuator__car-name">Мотоцикл (крадроцикл и т.д.)</p>
+                                    <p class="evacuator__price">3 000 руб</p>
+                                </li>
+                                <li class="evacuator__item">
+                                    <p class="evacuator__car-name">Внедорожник</p>
+                                    <p class="evacuator__price">нет</p>
+                                </li>
+                                <li class="evacuator__item">
+                                    <p class="evacuator__car-name">Микроавтобус</p>
+                                    <p class="evacuator__price">нет</p>
+                                </li>
+                                <li class="evacuator__item">
+                                    <p class="evacuator__car-name">Загородный тариф</p>
+                                    <p class="evacuator__price">50 руб/км</p>
+                                </li>
+                            </ul>
+
+                            <div class="evacuator__card-info">
+                                <div class="evacuator__block-location">
+                                    <div class="evacuator__location">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.262 22.134C11.262 22.134 4 16.018 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10C20 16.018 12.738 22.134 12.738 22.134C12.334 22.506 11.669 22.502 11.262 22.134ZM12 13.5C12.4596 13.5 12.9148 13.4095 13.3394 13.2336C13.764 13.0577 14.1499 12.7999 14.4749 12.4749C14.7999 12.1499 15.0577 11.764 15.2336 11.3394C15.4095 10.9148 15.5 10.4596 15.5 10C15.5 9.54037 15.4095 9.08525 15.2336 8.66061C15.0577 8.23597 14.7999 7.85013 14.4749 7.52513C14.1499 7.20012 13.764 6.94231 13.3394 6.76642C12.9148 6.59053 12.4596 6.5 12 6.5C11.0717 6.5 10.1815 6.86875 9.52513 7.52513C8.86875 8.1815 8.5 9.07174 8.5 10C8.5 10.9283 8.86875 11.8185 9.52513 12.4749C10.1815 13.1313 11.0717 13.5 12 13.5Z"
+                                                fill="#777777" />
+                                        </svg>
+                                        <p class="evacuator__location-text">Место стоянки</p>
+                                    </div>
+                                    <address class="evacuator__address">Москва, ул Пушкина</address>
+                                </div>
+                                <ul class="evacuator__card-contact">
+
+                                    <li class="evacuator__task-item">
+                                        <a class="evacuator__phone" href="tel:+79999999">
+                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.27204 2.43899L9.34904 2.09499C10.357 1.77299 11.435 2.29399 11.867 3.31199L12.727 5.33999C13.102 6.22299 12.894 7.26199 12.213 7.90799L10.32 9.70599C10.4367 10.782 10.798 11.841 11.404 12.883C11.9803 13.8909 12.7525 14.7732 13.675 15.478L15.951 14.718C16.813 14.431 17.752 14.762 18.281 15.539L19.513 17.349C20.129 18.253 20.018 19.499 19.255 20.265L18.437 21.086C17.623 21.903 16.461 22.2 15.385 21.864C12.8464 21.072 10.512 18.721 8.38204 14.811C6.24937 10.8943 5.49671 7.57166 6.12404 4.84299C6.38804 3.69499 7.20604 2.77999 8.27404 2.43899"
+                                                    fill="white" />
+                                            </svg>
+                                            <span>+7 999 99 99</span>
+                                        </a>
+
+                                    </li>
+                                    <li class="evacuator__task-item">
+                                        <a class="evacuator__chat" href="#">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.001 2C17.524 2 22.001 6.477 22.001 12C22.001 17.523 17.524 22 12.001 22C10.2337 22.003 8.49757 21.5353 6.97099 20.645L2.00499 22L3.35699 17.032C2.46595 15.5049 1.99789 13.768 2.00099 12C2.00099 6.477 6.47799 2 12.001 2ZM8.59299 7.3L8.39299 7.308C8.26368 7.31691 8.13734 7.35087 8.02099 7.408C7.91257 7.46951 7.81355 7.5463 7.72699 7.636C7.60699 7.749 7.53899 7.847 7.46599 7.942C7.09611 8.4229 6.89696 9.01331 6.89999 9.62C6.90199 10.11 7.02999 10.587 7.22999 11.033C7.63899 11.935 8.31199 12.89 9.19999 13.775C9.41399 13.988 9.62399 14.202 9.84999 14.401C10.9534 15.3724 12.2683 16.073 13.69 16.447L14.258 16.534C14.443 16.544 14.628 16.53 14.814 16.521C15.1052 16.5056 15.3895 16.4268 15.647 16.29C15.7778 16.2223 15.9056 16.1489 16.03 16.07C16.03 16.07 16.0723 16.0413 16.155 15.98C16.29 15.88 16.373 15.809 16.485 15.692C16.569 15.6053 16.639 15.5047 16.695 15.39C16.773 15.227 16.851 14.916 16.883 14.657C16.907 14.459 16.9 14.351 16.897 14.284C16.893 14.177 16.804 14.066 16.707 14.019L16.125 13.758C16.125 13.758 15.255 13.379 14.723 13.137C14.6673 13.1128 14.6077 13.0989 14.547 13.096C14.4786 13.0888 14.4094 13.0965 14.3442 13.1184C14.279 13.1403 14.2192 13.176 14.169 13.223C14.164 13.221 14.097 13.278 13.374 14.154C13.3325 14.2098 13.2753 14.2519 13.2098 14.2751C13.1443 14.2982 13.0733 14.3013 13.006 14.284C12.9408 14.2666 12.877 14.2446 12.815 14.218C12.691 14.166 12.648 14.146 12.563 14.11C11.9889 13.8599 11.4574 13.5215 10.988 13.107C10.862 12.997 10.745 12.877 10.625 12.761C10.2316 12.3842 9.88874 11.958 9.60499 11.493L9.54599 11.398C9.50425 11.3338 9.47003 11.265 9.44399 11.193C9.40599 11.046 9.50499 10.928 9.50499 10.928C9.50499 10.928 9.74799 10.662 9.86099 10.518C9.97099 10.378 10.064 10.242 10.124 10.145C10.242 9.955 10.279 9.76 10.217 9.609C9.93699 8.925 9.64766 8.24467 9.34899 7.568C9.28999 7.434 9.11499 7.338 8.95599 7.319C8.90199 7.31233 8.84799 7.307 8.79399 7.303C8.65972 7.2953 8.52508 7.29664 8.39099 7.307L8.59299 7.3Z"
+                                                    fill="white" />
+                                            </svg>
+
+                                            <span>Написать в чат</span>
+                                        </a>
+                                    </li>
+                                    <li class="evacuator__task-item">
+                                        <a class="evacuator__id" href="#">
+                                            <p>ID объявления <span>63</span></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="evacuator__signature">Эвакуатор авто. Всегда на связи! Быстро и надежно</p>
+
+                    </li>
+
+                    <li class="evacuator__card">
+                        <h2 class="evacuator__card-title">Эвакуатор</h2>
+                        <div class="evacuator__inner-card">
+                            <div class="evacuator__card-photo">
+                                <img src="./img/img2.jpg" alt="'эвакуатор">
+                            </div>
+                            <ul class="evacuator__characteristics">
+                                <li class="evacuator__item">
+                                    <p class="evacuator__car-name">Легковой автомобиль</p>
+                                    <p class="evacuator__price">4 000 руб</p>
+                                </li>
+                                <li class="evacuator__item">
+                                    <p class="evacuator__car-name">Мотоцикл (крадроцикл и т.д.)</p>
+                                    <p class="evacuator__price">3 000 руб</p>
+                                </li>
+                                <li class="evacuator__item">
+                                    <p class="evacuator__car-name">Внедорожник</p>
+                                    <p class="evacuator__price">4 000 руб</p>
+                                </li>
+                                <li class="evacuator__item">
+                                    <p class="evacuator__car-name">Микроавтобус</p>
+                                    <p class="evacuator__price">6 000 руб</p>
+                                </li>
+                                <li class="evacuator__item">
+                                    <p class="evacuator__car-name">Загородный тариф</p>
+                                    <p class="evacuator__price">50 руб/км</p>
+                                </li>
+                            </ul>
+
+                            <div class="evacuator__card-info">
+                                <div class="evacuator__block-location">
+                                    <div class="evacuator__location">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.262 22.134C11.262 22.134 4 16.018 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10C20 16.018 12.738 22.134 12.738 22.134C12.334 22.506 11.669 22.502 11.262 22.134ZM12 13.5C12.4596 13.5 12.9148 13.4095 13.3394 13.2336C13.764 13.0577 14.1499 12.7999 14.4749 12.4749C14.7999 12.1499 15.0577 11.764 15.2336 11.3394C15.4095 10.9148 15.5 10.4596 15.5 10C15.5 9.54037 15.4095 9.08525 15.2336 8.66061C15.0577 8.23597 14.7999 7.85013 14.4749 7.52513C14.1499 7.20012 13.764 6.94231 13.3394 6.76642C12.9148 6.59053 12.4596 6.5 12 6.5C11.0717 6.5 10.1815 6.86875 9.52513 7.52513C8.86875 8.1815 8.5 9.07174 8.5 10C8.5 10.9283 8.86875 11.8185 9.52513 12.4749C10.1815 13.1313 11.0717 13.5 12 13.5Z"
+                                                fill="#777777" />
+                                        </svg>
+                                        <p class="evacuator__location-text">Место стоянки</p>
+                                    </div>
+                                    <address class="evacuator__address">Москва, пр-кт Андропова</address>
+                                </div>
+                                <ul class="evacuator__card-contact">
+
+                                    <li class="evacuator__task-item">
+                                        <a class="evacuator__phone" href="tel:+79999999">
+                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.27204 2.43899L9.34904 2.09499C10.357 1.77299 11.435 2.29399 11.867 3.31199L12.727 5.33999C13.102 6.22299 12.894 7.26199 12.213 7.90799L10.32 9.70599C10.4367 10.782 10.798 11.841 11.404 12.883C11.9803 13.8909 12.7525 14.7732 13.675 15.478L15.951 14.718C16.813 14.431 17.752 14.762 18.281 15.539L19.513 17.349C20.129 18.253 20.018 19.499 19.255 20.265L18.437 21.086C17.623 21.903 16.461 22.2 15.385 21.864C12.8464 21.072 10.512 18.721 8.38204 14.811C6.24937 10.8943 5.49671 7.57166 6.12404 4.84299C6.38804 3.69499 7.20604 2.77999 8.27404 2.43899"
+                                                    fill="white" />
+                                            </svg>
+                                            <span>+7 999 99 99</span>
+                                        </a>
+
+                                    </li>
+                                    <li class="evacuator__task-item">
+                                        <a class="evacuator__phone" href="tel:+79999999">
+                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.27204 2.43899L9.34904 2.09499C10.357 1.77299 11.435 2.29399 11.867 3.31199L12.727 5.33999C13.102 6.22299 12.894 7.26199 12.213 7.90799L10.32 9.70599C10.4367 10.782 10.798 11.841 11.404 12.883C11.9803 13.8909 12.7525 14.7732 13.675 15.478L15.951 14.718C16.813 14.431 17.752 14.762 18.281 15.539L19.513 17.349C20.129 18.253 20.018 19.499 19.255 20.265L18.437 21.086C17.623 21.903 16.461 22.2 15.385 21.864C12.8464 21.072 10.512 18.721 8.38204 14.811C6.24937 10.8943 5.49671 7.57166 6.12404 4.84299C6.38804 3.69499 7.20604 2.77999 8.27404 2.43899"
+                                                    fill="white" />
+                                            </svg>
+                                            <span>+7 999 99 99</span>
+                                        </a>
+                                    </li>
+                                    <li class="evacuator__task-item">
+                                        <a class="evacuator__id" href="#">
+                                            <p>ID объявления <span>63</span></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="evacuator__signature">Эвакуатор авто. Всегда на связи! Быстро и надежно</p>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+
 </body>
+
 </html>
